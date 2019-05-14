@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StudentRegistrationApp</string>
+    <string name="name_hint">Student Name</string>
+    <string name="email_hint">Student Email</string>
+    <string name="add_student">Add Student</string>
+    <string name="country_hint">Student Country</string>
+    <string name="required_field">This field is required</string>
+</resources>

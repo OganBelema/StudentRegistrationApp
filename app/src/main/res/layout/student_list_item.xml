@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="student"
+            type="com.oganbelema.studentregistrationapp.database.entity.Student" />
+    </data>
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/studentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/studentNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{student.name}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+            <TextView
+                android:id="@+id/studentEmailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{student.email}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+            <TextView
+                android:id="@+id/studentCountryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{student.country}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+
+            <TextView
+                android:id="@+id/studentDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{student.registeredTime}"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
